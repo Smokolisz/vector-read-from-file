@@ -2,7 +2,7 @@
 #include <vector>
 #include <fstream>
 #include <conio.h>
-#include <windows.h>
+//#include <windows.h>
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 using namespace std;
 
@@ -89,9 +89,8 @@ void klasa::wczytajZPliku(const char *nazwa) {
         wprowadzany.adres = adres;
         wprowadzany.PESEL = PESEL;
 
-        spis.push_back(wprowadzany); //TU WSTAW do tablicy nowy rekord
+        spis.push_back(wprowadzany);
 
-        /* do something with name, var1 etc. */
         cout<<"Odczytano 1 linie: \n";
         cout << numer << " " << imie << " " << nazwisko << " " << adres << " " << PESEL << "\n";
     }
